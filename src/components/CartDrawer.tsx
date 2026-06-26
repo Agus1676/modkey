@@ -156,7 +156,7 @@ export const CartDrawer: React.FC = () => {
                   <span className="text-xl font-bold text-white">${cartTotal.toLocaleString()}</span>
                 </div>
                 <p className="text-[11px] text-muted-neon">
-                  El envío y los impuestos se calcularán al finalizar la compra. Envío express gratis para órdenes mayores a $150.
+                  El envío y los impuestos se calcularán al finalizar la compra. Envío express gratis para órdenes mayores a $25.000.
                 </p>
                 <Link 
                   href="/checkout"

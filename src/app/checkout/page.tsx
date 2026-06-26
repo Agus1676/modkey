@@ -101,7 +101,7 @@ export default function CheckoutPage() {
 
       // Calculate final pricing with coupon
       let discountVal = 0;
-      let shippingVal = cartTotal > 150000 ? 0 : 4500;
+      let shippingVal = cartTotal > 25000 ? 0 : 4500;
 
       if (appliedCoupon) {
         const coupon = VALID_COUPONS[appliedCoupon];
@@ -141,7 +141,7 @@ export default function CheckoutPage() {
 
   // Calculate prices for rendering
   let discountAmount = 0;
-  let shippingCost = cartTotal > 150000 ? 0 : 4500;
+  let shippingCost = cartTotal > 25000 ? 0 : 4500;
 
   if (appliedCoupon) {
     const coupon = VALID_COUPONS[appliedCoupon];

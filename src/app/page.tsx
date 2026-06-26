@@ -174,7 +174,7 @@ function HomeContent() {
               </div>
               <div>
                 <h3 className="font-semibold text-white text-sm">Envíos Rápidos</h3>
-                <p className="text-xs text-muted-neon mt-0.5">Envío bonificado en todo el país desde $150.</p>
+                <p className="text-xs text-muted-neon mt-0.5">Envío bonificado en todo el país desde $25.000.</p>
               </div>
             </div>
           </div>
