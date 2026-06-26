@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⌨️ ModKey | E-Commerce Premium de Teclados Mecánicos Custom
 
-## Getting Started
+¡Bienvenido a **ModKey**! Una plataforma de comercio electrónico de alta fidelidad dedicada a la venta de teclados mecánicos premium, switches lubricados, keycaps de diseño y accesorios custom. El proyecto está construido utilizando **Next.js (App Router)**, **TypeScript**, y **Tailwind CSS**, priorizando una estética retro-futurista oscura con iluminaciones neón y micro-interacciones pulidas.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Características Destacadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔊 1. Probador de Acústica de Switches (Sound Tester)
+*   **Web Audio API:** Generación y síntesis matemática de frecuencias de audio directamente en el navegador (sin archivos `.mp3` pesados externos) para recrear los perfiles de sonido de tipeo más buscados:
+    *   *Linear (Thock):* Tono grave, profundo y amortiguado.
+    *   *Tactile (Clack):* Tono medio y nítido.
+    *   *Clicky (Snap):* Tono metálico y agudo.
+*   **Teclado 60% Reactivo:** Un render de teclado en CSS responsivo que se ilumina con luces neón y reacciona en tiempo real a las teclas presionadas en el teclado físico de la computadora.
+*   **Visualizador de Frecuencia:** Un osciloscopio en tiempo real dibujado sobre `<canvas>` que reacciona a los picos de volumen de cada tecla pulsada.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🎡 2. Rueda de Descuentos Neón (Lucky Wheel)
+*   **Gamificación Interactiva:** Una rueda de la fortuna flotante con luces neón y giros simulados mediante inercia física real (`requestAnimationFrame`).
+*   **Sonidos en Tiempo Real:** Emisión de clics acústicos síncronos al cruzar los pines de cada segmento y una melodía arpegiada victoriosa al detenerse.
+*   **Cupones Reales:** Los usuarios pueden ganar códigos como `THOCK15`, `CYBER25`, `FREESHIP` o `KEYCAP20`, los cuales se guardan en `localStorage` y se aplican de forma automática en la pasarela de pago.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔒 3. Portal de Administración Seguro (Admin Gate)
+*   **Acceso Protegido:** Un login gate moderno y seguro que restringe el acceso a las vistas de métricas, inventario y órdenes.
+*   **Animaciones Premium:** Formulario con botones de visualización de contraseña, control de sesión persistente (`localStorage`) o temporal (`sessionStorage`), y una animación de sacudida (shake) carmesí neón ante contraseñas incorrectas.
+*   **Panel CRUD:** Dashboard completo para gestionar productos, actualizar stocks en tiempo real y realizar seguimiento de los pedidos recibidos.
 
-## Learn More
+### 🧾 4. Checkout con Ticket de Barcode Neón
+*   **Recálculo de Costos en ARS:** Configurado para pesos argentinos. Envío express a `$4.500` ARS, o **Gratis** si el subtotal de productos supera los `$150.000` ARS.
+*   **Desglose Detallado:** Muestra descuentos dinámicos y deducciones en tiempo real según el cupón aplicado.
+*   **Ticket Estilo Físico:** Al confirmar la compra, genera un recibo digital translúcido con un código de barras responsivo dibujado en CSS puro.
 
-To learn more about Next.js, take a look at the following resources:
+### 📸 5. Galería de Inspiraciones Interactiva
+*   Modal animado que presenta setups de escritorio premium en alta resolución. Al hacer clic en *"Ver Teclado"* de cualquier estilo, el modal se cierra, realiza un scroll suave al catálogo y pre-filtra los teclados correspondientes para incentivar la compra.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 💬 6. Botón de Soporte por WhatsApp
+*   Botón flotante con el color de marca oficial de WhatsApp y efecto de ondas expansivas que abre una conversación pre-redactada de asesoramiento personalizado con un clic.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Stack Tecnológico
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+*   **Framework:** Next.js 16 (App Router) y React 19.
+*   **Lenguaje:** TypeScript.
+*   **Estilos:** Tailwind CSS v4 con variables neón personalizadas.
+*   **Animaciones:** Framer Motion (para transiciones de páginas y modales).
+*   **Iconografía:** Lucide React.
+*   **Base de Datos / Backend:** Supabase (con fallback automático e inteligente a `localStorage` para asegurar funcionamiento inmediato sin configuración de red).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Instalación y Desarrollo Local
+
+Seguí estos pasos para clonar y ejecutar el proyecto localmente:
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/Agus1676/modkey.git
+    cd modkey
+    ```
+
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
+
+3.  **Iniciar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Abrir el navegador:**
+    Ingresá a [http://localhost:3000](http://localhost:3000) para ver tu tienda en vivo.
+
+---
+
+## ✍️ Créditos y Autoría
+
+Este sitio web y todas sus características interactivas han sido desarrollados por **Agustin Pollan**. 
+
+*   **Contacto:** agustinpollanceo@gmail.com
+*   **GitHub:** [@Agus1676](https://github.com/Agus1676)
