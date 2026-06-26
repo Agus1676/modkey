@@ -52,7 +52,7 @@ const SEED_PRODUCTS: Product[] = [
     slug: 'keebforge-artisan-60',
     description: 'Teclado compacto de formato 60% montado sobre un bloque sólido de madera de nogal americano tallada a mano y tratada con aceites naturales. Placa interna de latón para un peso contundente y un tono acústico cálido.',
     price: 280000,
-    image_url: 'https://images.unsplash.com/photo-1626908013351-800ddd734b8a?q=80&w=600&auto=format&fit=crop',
+    image_url: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=600&auto=format&fit=crop',
     category: 'keyboards',
     stock: 5,
     specs: {
@@ -228,7 +228,7 @@ const SEED_PRODUCTS: Product[] = [
     slug: 'botanical-forest-keycaps',
     description: 'Set de 142 keycaps inspirado en la naturaleza. Fabricado en material PBT de doble inyección con perfil Cherry. Combinación de colores verde bosque, salvia y blanco marfil.',
     price: 68000,
-    image_url: 'https://images.unsplash.com/photo-1626908013351-800ddd734b8a?q=80&w=600&auto=format&fit=crop',
+    image_url: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=600&auto=format&fit=crop',
     category: 'keycaps',
     stock: 10,
     specs: {
@@ -264,10 +264,10 @@ const setLocalStorage = <T>(key: string, value: T): void => {
 const initializeLocalStorage = () => {
   if (typeof window !== 'undefined') {
     const currentVersion = window.localStorage.getItem('modkey_db_version');
-    if (currentVersion !== '4.0') {
+    if (currentVersion !== '5.0') {
       window.localStorage.setItem('modkey_products', JSON.stringify(SEED_PRODUCTS));
       window.localStorage.setItem('modkey_orders', JSON.stringify([]));
-      window.localStorage.setItem('modkey_db_version', '4.0');
+      window.localStorage.setItem('modkey_db_version', '5.0');
     }
   }
 };
